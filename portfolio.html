@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio in a single page</title>
+	  <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adriana's Portfolio</title>
+    <link rel="stylesheet" href="mainportfolio.css">
+    <link rel="stylesheet" href="bootstrap-social.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<style type="text/css">
+		#name {
+    color: white;
+    font-family: "Oswald";
+}
+
+.nav-item {
+    font-family: "Oswald";
+    font-size: 20px;
+}
+
+
+.intro {
+  top: 0;
+  background: #e0ebe8;
+  min-height: 50vh;
+  padding-top: 45vh;
+  padding-bottom:25vh;
+  text-align:center;
+  /*   line-height: 100vh; */
+  /*   width:100%;
+  height:96vh;
+border:solid; */
+}
+
+.intro p {
+  color: green;
+  text-align:center;
+}
+
+h1 {
+    font-family: "Oswald";
+}
+
+section{
+    width: 100%;
+    background: rgba(153, 240, 255, 0.13);
+}
+
+section:nth-of-type(2n) {
+    background-color: white;
+}
+
+form{
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer li{
+    display: inline;
+}
+
+footer ul{
+    width: 231px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20pt;
+}
+
+.navbar{
+    margin-bottom: 0px;
+}
+
+hr{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.navbar-right{
+    margin-right: 15px;
+}
+
+.border {
+    colour: black;
+    width: 1px;
+}
+#submit {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.chujombotron {
+    margin-bottom: 0;
+    margin-top: 60px;
+}
+
+.chujombotron > .container{
+    padding-top: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    font-family: "Oswald";
+}
+
+#contact h2 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0 !important;
+    padding-bottom: 10px;
+    font-weight: lighter;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Raleway;
+}
+
+svg {
+    width: 28px;
+    height: 32px;
+}
+
+.lead {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+footer {
+    width: 100%;
+}
+
+label {
+    text-align: center;
+}
+
+#copy {
+    font-family: Arial, sans-serif;
+}
+
+#contactButtons {
+    justify-content: center;
+    align-items: center;
+}
+
+#mail {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .lead {
+        margin-top: 20px;
+    }
+
+}
+
+#contact {
+  height: 100vh;
+}
+#contact h1 {
+  text-align:center;
+}
+.contact-links {
+  display: grid;
+  grid-gap: 2%;
+  grid-template-columns: repeat(2, 25%);
+  align-items: center;
+  justify-items: center;
+  place-content: center;
+  margin: 2%;
+}
+
+@media screen and (min-width: 500px) {
+   .contact-links {
+    grid-template-columns: repeat(3, 20%);
+  }
+}
+
+@media screen and (min-width: 500px) {
+   .contact-links {
+    grid-template-columns: 20% 20% 20% 20%;
+  }
+}
+
+	</style>
+</head>
+<body>
+<header>
+    <nav id="navbar" class="navbar fixed-top navbar-dark navbar-expand-lg bg-dark" id="right-name">
+        <a class="navbar-brand" id="name">PORTFOLIO</a>
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#About">About<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <div id="welcome-section" class="intro">
+
+  <h1>Hey, I'm Emon.</h1>
+  <p>A Self Disciple Of Google</p>
+
+
+</div>
+<!--Header-->
+<main>
+    <section class="chujombotron text-center" id="About">
+        <div class="container">
+            <h1 class="jumbotron-heading">About Me</h1>
+            <p class="lead text-muted">Coding with a passion for Vue</p>
+            <p>I've always liked creative work and found out that programming gives me a ton of possibilities. I started
+                Free Code Camp at the beginning of last year, I've done classes on HTML, CSS.I have done programming in C,C++,Python and made a couple of android application.I am a student of Electrical and Electronics Engineering.I have also done a couple of projects with Internet Of Things. </p>
+     
+            <p>I love talking about food,  trying new food and that's why I'm working on an app that will help to keep the home stock in check to prevent food waste.</p>
+           
+            <p>Since I picked up programming I feel like my creative brain is firing up and I love that feeling, so I'm looking forward to make use of my knowledge and skills at work. You can expect from me to be thorough and positive and if you feel like you'd like to chat with me, let me know  by <a href="#contact">email .</a></p>
+        </div>
+    </section>
+    <hr>
+
+    <!--Gallery grid section-->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div id="projects" class="row">
+
+                <!--blog-photo-->
+              
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                      <div class="project-tile">
+                        <a href="https://adziklipa.me/"><img class="card-img-top" src="https://image.slidesharecdn.com/arduinounooriginal-151030110529-lva1-app6891/95/arduino-uno-original-by-robomart-5-638.jpg?cb=1446203389" alt="blog" width=500></a>
+                      </div>
+                    </div>
+                </div>
+              
+
+                <!--cumberbitch-photo-->
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <a href="https://codepen.io/anon/pen/XPByPP"><img class="card-img-top"
+                                                                             src="https://image.slidesharecdn.com/theartofscience-141007152608-conversion-gate01/95/leonardo-da-vinci-the-art-of-science-2-638.jpg?cb=1412695796" alt="Leonardo da Vinchi" width=500></a>
+                    </div>
+                </div>
+
+                <!--Random Quote Generator photo-->
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <a href="https://codepen.io/anon/pen/vzaQVE"><img id="quote" class="card-img-top" src="https://expresswriters.com/wp-content/uploads/2017/06/papersource_surveyinvite.jpg"
+                                                                             alt="RandomQuoteGenerator" width=500></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!--Contact Section-->
+   <section id="contact">
+    <h1>Let's Build Something Together</h1>
+
+    <div class="contact-links">
+    <a href="https://codepen.io/anon/pen/vzaQVE" id="profile-link" target="_blank">
+    <i class="fab fa-github fa-3x"></i>
+    <p>GitHub</p>
+    </a>
+
+    <a href="#" id="profile-link" target="_blank">
+    <i class="fab fa-twitter fa-3x"></i>
+    <p>Twitter</p>
+    </a>
+
+    <a href="https://www.linkedin.com/in/ibrahim-ullah-emon-4595b2160/" id="profile-link" target="_blank">
+    <i class="fab fa-linkedin fa-3x"></i>
+    <p>LinkedIn</p>
+    </a>
+   
+    <a href="mdibrahimemon297@gmail.com" id="profile-link">
+    <i class="far fa-envelope fa-3x"></i>
+    <p>Email Me</p>
+    </a>
+      
+      </div>
+  </section>
+    <hr>
+
+    <!--Around the web-->
+    <section id="Around the web">
+        <div class="container">
+            <div class="row">
+                <footer>
+                    <h2>This portfolio is created for own purposes.</h2>
+
+                    
+                </footer>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js"
+        integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
+        crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"
+        integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
+        crossorigin="anonymous"></script>
+</body>
+</html>
