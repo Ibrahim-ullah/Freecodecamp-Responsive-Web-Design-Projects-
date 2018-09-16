@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Documentation of python</title>
+	<style type="text/css">
+		
+html,body{
+  min-width:290px;
+    color: #959897;
+    background-color: #000000;
+    font-family: 'Open Sans',Ubuntu,sans-serif;
+    line-height: 1.5;
+}
+#navbar{
+  position:fixed;
+  min-width:290px;
+  top:0px;
+  left:0px;
+  width:300px;
+  height:100%;
+  border-right:solid;
+  border-color:rgba(0,22,22,0.4)
+}
+header{
+  color:#FFC53A;
+  font-size: 30px;
+  margin:10px;
+  text-align:center;
+  font-size:1.8em;
+  font-weight:thin;
+}
+#main-doc header{
+  text-align:left;
+  margin:0px;
+}
+#navbar ul{
+  height:88%;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+#navbar li{
+  color: #FFFFFF;
+  border:1px solid;
+  border-bottom-width:0px;
+  padding:8px;
+  padding-left:45px;
+  list-style: none;
+  position:relative;
+ left:-50px;
+  width:100%;
+  
+}
+#navbar a{
+  color: #4d4e53;
+    text-decoration:none;
+    cursor:pointer;
+} 
+#main-doc{
+  position: absolute;
+  margin-left:310px;
+  padding:20px;
+  margin-bottom:110px;
+}
+section article{
+  color: #959897;
+  margin:15px;
+  font-size:0.96em;
+}
+section li {
+  margin:15px 0px 0px 20px;
+}
+code{
+  display:block;
+    text-align: left;
+  white-space: pre;
+  position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color:#f7f7f7;
+  padding:15px;
+  margin:10px;
+    border-radius:5px;
+}
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+  #navbar ul{
+  border:1px solid;
+    height:207px;
+  }
+    #navbar{
+      background-color:white;
+      position:absolute;
+      top:0;
+      padding:0;
+      margin: 0;
+      width:100%;
+      max-height:275px;
+      border:none;
+      z-index:1;
+      border-bottom:2px solid;
+    }
+  #main-doc{
+    position: relative;
+    margin-left:0px;
+    margin-top:270px;
+  }
+  #main-doc section {
+/*     padding-top: 240px; */
+  }
+}
+@media only screen and (max-width: 400px) {
+  #main-doc{
+    margin-left:-10px;
+  }
+  code{
+    margin-left:-20px;
+    width:100%;
+    padding:15px;
+    padding-left:10px;
+    padding-right:45px;
+    min-width:233px;
+  }
+}
+		
+	</style>
+</head>
+<body>
+
+<nav id="navbar">
+  <header>BASIC OF PYTHON</header>
+  <ul> 
+    <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+    <a class="nav-link" href="#Python Get Started" rel="internal"><li>Python Get Started</li></a>
+    <a class="nav-link" href="#Hello_world" rel="internal"><li>Hello world</li></a>
+    <a class="nav-link" href="#Variables" rel="internal"><li>Variables</li></a>
+   
+    <a class="nav-link" href="#Variable_Name" rel="internal"><li>Variable Name</li></a>
+    <a class="nav-link" href="#Python Numbers" rel="internal"><li>Python Numbers</li></a>
+    <a class="nav-link" href="#if...else_statement" rel="internal"><li>if...else statement</li></a>
+    <a class="nav-link" href="#while_statement" rel="internal"><li>while statement</li></a>
+    <a class="nav-link" href="#Function_declarations" rel="internal"><li>Function declarations</li></a>
+    <a class="nav-link" href="#Reference" rel="internal"><li>Reference</li></a>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <h3>What is Python?</h3>
+<p>Python is a popular programming language. It was created in 1991 by Guido van Rossum.</p>
+
+<p>It is used for:</p>
+
+<ul>
+<li>web development (server-side), </li>
+<li>software development, </li>
+<li>mathematics,</li>
+<li>system scripting.</li>
+</ul>
+
+<h3>What can Python do?</h3>
+<ul>
+<li>Python can be used on a server to create web applications.</li>
+<li>Python can be used alongside software to create workflows.</li>
+<li>Python can connect to database systems. It can also read and modify files.</li>
+<li>Python can be used to handle big data and perform complex mathematics.</li>
+<li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+</ul>
+
+    </section>
+ 
+  <section class="main-section" id="Python Get Started">
+    <header>Python Get Started</header>
+   <article>
+     <h2>Python Install</h2>
+     <p>Many PCs and Macs will have python already installed.
+
+To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):</p>
+     <code>
+C:\Users\Your Name>python --version
+     </code>
+     <p>To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the Terminal and type:</p>
+      <code>
+python --version
+     </code>
+     <p>If you find that you do not have python installed on your computer, then you can download it from python official website.</p>
+     
+    </article>
+    </section>
+  <section class="main-section" id="Hello_world">
+    <header>Hello world</header>
+    <article> 
+To get started with writing python, open the terminal or any editor you may prefer and write your first "Hello world" python code:
+<code>print("Hello, World!")
+</code>
+
+Press the enter and do not forget to add .py extension into your file.
+    </article>
+    </section>
+  <section class="main-section" id="Variables">
+    <header>Variables</header>
+    <p>
+Unlike other programming languages, Python has no command for declaring a variable.A variable is created the moment you first assign a value to it.
+    </p>
+ <code>
+x = 5
+y = "John"
+print(x)
+print(y)
+    </code>
+   <p>Variables do not need to be declared with any particular type and can even change type after they have been set.</p>
+    <code>
+      x = 4
+x = "Sally"
+print(x)
+    </code>
+    </section>
+ 
+  <section class="main-section" id="Variable_Name">
+    <header>Variable Name</header>
+    <article>
+     <p> A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:</p>
+
+<ul>
+  <li>A variable name must start with a letter or the underscore character</li>
+  <li>A variable name cannot start with a number</li>
+  <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+  <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+      </ul>
+    </article>
+    </section>
+ 
+  <section class="main-section" id="Python Numbers">
+    <header>Python Numbers</header>
+    <article>
+<p>There are three numeric types in Python:</p>
+      <ul>
+        <li>int</li>
+        <li>float</li>
+        <li>complex</li>
+      </ul>
+
+      <code>
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complex
+      </code>
+<p>To verify the type of any object in Python, use the type() function:</p>
+
+<code>
+x = 1.10
+y = 1.0
+z = -35.59
+
+print(type(x))
+print(type(y))
+print(type(z))
+</code>
+
+    </article>
+    </section>
+ 
+  <section class="main-section" id="if...else_statement">
+    <header>if...else statement</header>
+    <article>
+Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:
+
+<code>if (condition) {
+  statement_1;
+} else {
+  statement_2;
+}</code>
+condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.
+<p>
+You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:
+      </p>
+<code>if (condition_1) {
+  statement_1;
+} else if (condition_2) {
+  statement_2;
+} else if (condition_n) {
+  statement_n;
+} else {
+  statement_last;
+} </code>
+In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:
+
+<code>if (condition) {
+  statement_1_runs_if_condition_is_true;
+  statement_2_runs_if_condition_is_true;
+} else {
+  statement_3_runs_if_condition_is_false;
+  statement_4_runs_if_condition_is_false;
+}</code>
+It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:
+<code>if (x = y) {
+  /* statements here */
+}</code>
+If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example:
+
+<code>if ((x = y)) {
+  /* statements here */
+}</code>
+    </article>
+    </section>
+  <section class="main-section" id="while_statement">
+    <header>while statement</header>
+    <article>
+A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:
+
+<code>while (condition)
+  statement</code>
+If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.
+
+<p>The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.</p>
+
+      <p>To execute multiple statements, use a block statement ({ ... }) to group those statements.</p>
+
+Example:
+
+      <p>The following while loop iterates as long as n is less than three:</p>
+
+<code> n = 0;
+ x = 0;
+while (n < 3) {
+  n++;
+  x += n;
+}</code>
+<p>With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on the following values:</p>
+
+<li>After the first pass: n = 1 and x = 1</li>
+<li>After the second pass: n = 2 and x = 3</li>
+<li>After the third pass: n = 3 and x = 6</li>
+ <p>After completing the third pass, the condition n &lt 3 is no longer true, so the loop terminates.</p>
+    </article>
+    </section>
+  <section class="main-section" id="Function_declarations">
+    <header>Function declarations</header>
+    <article> 
+A function is a block of code which only runs when it is called.
+
+You can pass data, known as parameters, into a function.
+
+A function can return data as a result.
+
+      <h2>Creating a Function</h2>
+      <p>In Python a function is defined using the def keyword:</p>
+      <code>
+  def my_function():
+  print("Hello from a function")
+      </code>
+      
+      <h2>Calling a Function</h2>
+      <p>To call a function, use the function name followed by parenthesis</p>
+      <code>
+  def my_function():
+  print("Hello from a function")
+  my_function()
+      </code>
+        <h2>Parameters</h2>
+      <p>Information can be passed to functions as parameter.
+
+Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.
+
+The following example has a function with one parameter (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:</p>
+      <code>
+def my_function(fname):
+print(fname + " Refsnes")
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
+      </code>
+       <h2>Default Parameter Value</h2>
+      <p>The following example shows how to use a default parameter value.
+
+If we call the function without parameter, it uses the default value:</p>
+      <code>
+def my_function(country = "Norway"):
+print("I am from " + country)
+my_function("Sweden")
+my_function("India")
+my_function()
+my_function("Brazil")
+      </code>
+        <h2>Return Values</h2>
+      <p>To let a function return a value, use the return statement:</p>
+      <code>
+def my_function(x):
+return 5 * x
+print(my_function(3))
+print(my_function(5))
+print(my_function(9))
+      </code>
+    </article>
+    </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <li>All the documentation in this page is taken from <a href="https://docs.python.org/3/" target="_blank">Python's official webpage</a>
+    </article>
+    </section>
+</main>
+</body>
+</html>

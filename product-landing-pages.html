@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product landing page</title>
+	<style type="text/css">
+		
+		* {
+  font-family: Raleway;
+  @media screen and (max-width: 992px) {
+  * {
+    font-family: Raleway;
+  }
+}
+
+}
+body {
+  background-color: #FFFFFF;
+}
+#outer {
+  position: relative;
+}
+#nav-bar {
+  width: 100%;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 8%;
+}
+#header-img {
+  position:fixed;
+  float:left;
+  top:-3%;
+}
+#device {
+  height: 25%;
+  width: 25%;
+}
+#device-2 {
+  border-radius:25px;
+  float:left;
+  padding:5px;
+  height:15%;
+  width:20%;
+}
+.pic-1 {
+  border-radius:25px;
+  float:left;
+  padding:15px;
+}
+.pic-2 {
+  border-radius:25px;
+  float:right;
+  padding:5px;
+  height:15%;
+  width:20%;
+}
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 100px;
+  padding: 0px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+  box-shadow: 2px 2px 5px black;
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+  }
+}
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #59B7FF;
+}
+
+.nav-link {
+    background-color: #eee;
+}
+#form {
+  text-align: center;
+}
+.head-1 {
+  text-align:center;
+}
+.head-2 {
+  text-align: right;
+}
+.about {
+  background-color: #77BA99;
+  padding: 15px;
+  width: ;
+}
+.break {
+  border:none;
+  padding-top:60px;
+}
+.specs {
+  padding: 10px;
+}
+.review {
+  display: flex;
+  justify-content: center;
+}
+#buy-now {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+#buy-now:hover {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: #59B7FF;
+  cursor: pointer;
+}
+.buy {
+  border: 4px black solid;
+  border-radius: 8px;
+  padding-bottom: 45px;
+}
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+} 
+  ul {
+    display: flex;
+    justify-content: flex-end;
+}   
+    li {
+      padding: 0 10px;
+}
+  span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #000;
+  }
+}
+	</style>
+</head>
+<body>
+<!--- disbaled --->
+<link rel="preconnect stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,500,700|Space+Mono" media="all" type="text/css">
+<div id="outer">
+<header id="header">
+  <nav id="nav-bar">
+    <div class="logo">
+      <img src="data:image/png;base64,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" id="header-img">
+    </div>
+    <ul style="list-style: none">
+      <li><a class="nav-link" href="#about">About</a></li>
+      <li><a class="nav-link" href="#specs">Device Specs</a></li>
+      <li><a class="nav-link" href="#review">Review</a></li>
+      <li><a class="nav-link" href="#buy">Buy Now</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="container">
+</div>
+<h2 class="head-1">
+  Join our mailing list
+</h2>
+  <p class="head-1">
+    Keep up to date with all the latest information by joining our mailing list
+  </p>
+  <form id="form" action="https://www.freecodecamp.com/email-submit"> 
+      <input name="email" id="email" type="email" placeholder="Please enter your email..." required>
+      <input id="submit" type="submit" value="Submit" class="submition">
+    </form>
+  <hr id="about" class="break">
+<div class="about">
+  <h1 class="head-2">How it all started</h1>
+  <p class="text-info">
+  <img src="http://www.werkstattworkshop.com/sites/default/files/styles/project_view_image/public/vol_knob.png?itok=xi63-kiv" id="device" class="pic-1">
+  The Arduino project started at the Interaction Design Institute Ivrea (IDII) in Ivrea, Italy. At that time, the students used a BASIC Stamp microcontroller at a cost of $50, a considerable expense for many students. In 2003 Hernando Barragán created the development platform Wiring as a Master's thesis project at IDII, under the supervision of Massimo Banzi and Casey Reas, who are known for work on the Processing language. 
+    <br>
+    The project goal was to create simple, low cost tools for creating digital projects by non-engineers. The Wiring platform consisted of a printed circuit board (PCB) with an ATmega168 microcontroller, an IDE based on Processing and library functions to easily program the microcontroller.
+    <br>
+    In 2003, Massimo Banzi, with David Mellis, another IDII student, and David Cuartielles, added support for the cheaper ATmega8 microcontroller to Wiring. But instead of continuing the work on Wiring, they forked the project and renamed it Arduino.
+<br>
+Arduino is a open source product.
+  </p>
+  </div>
+  <hr class="break" id="specs">
+  <div class="specs">
+    <h1 class="head-1">
+     Arduino Nano Specifications
+    </h1>
+    <p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0JG5wmbefG6ZfHscjnQU3XjERo3lWX_pjXZwhViOpR-WiunBVCA" id="device" class="pic-2">
+      <strong>Microcontroller:</strong> ATmega328
+      <br>
+      <strong>Operating Voltage:</strong> 5V 
+      <br>
+      <strong>Digital I/O Pins:</strong> 14
+      <br>
+      <strong>DC Current per I/O Pin:</strong> 40 mA 
+      <br>
+      <strong>Flash Memory:</strong> 32 KB
+      <br>
+      <strong>SRAM:</strong> 2 KB
+      <br>
+      <strong>EEPROM:</strong> 1 KB
+      <br>
+      <strong>Clock Speed:</strong> 16 MHz
+      <br>
+    </p>
+  </div>
+  <hr class="break" id="review">
+  <hr class="break">
+  <div class="review">
+  <iframe id = "video" width="853" height="480" src="https://www.youtube.com/embed/CqrQmQqpHXc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+  <hr id="buy" class="break">
+  <div class="buy">
+    <h1>
+      Go ahead and explore the world
+    </h1>
+    <p>
+      
+    </p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuOyHV-S59P1fy4h-NpJ3HgbNxoUXX_G0RD2BbClbESrEpE4w8" alt="Arduino Uno  Device" id="device-2">
+    <p>
+      This is the Arduino Uno R3. In addition to all the features of the previous board, the Uno now uses an ATmega16U2 instead of the 8U2 found on the Uno (or the FTDI found on previous generations). This allows for faster transfer rates and more memory. No drivers needed for Linux or Mac (inf file for Windows is needed and included in the Arduino IDE), and the ability to have the Uno show up as a keyboard, mouse, joystick, etc.
+      <br>
+      All that technology in one little credit card sized computer for only $17.50 bucks, whats not to love?
+    </p>
+    <h2>
+      $17.50
+    </h2>
+    <button id="buy-now" onclick=" window.open('https://www.adafruit.com/product/50','_blank')"> Buy Now</button>
+  </div>
+  <hr class="break">
+  <footer>
+    <ul style="list-style: none">
+      <li><a target="_blank" href="https://www.raspberrypi.org/contact/">Contact</a></li>
+    </ul>
+    <span> &copy;2018 Arduino Foundation, All Rights Reserved.</span>
+  </footer>
+</div>
+</body>
+</html>
